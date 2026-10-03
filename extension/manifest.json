@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Scam Job Checker",
+  "version": "1.0.0",
+  "description": "Checks the job posting on the current page for fraud signals using a local model.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:5000/*"],
+  "action": { "default_title": "Check this job", "default_popup": "popup.html" }
+}

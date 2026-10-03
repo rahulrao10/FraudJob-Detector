@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+
+# dataset (large, and Kaggle terms apply) and generated files
+data/*.csv
+artifacts/*
+results/*
+!data/.gitkeep
+!artifacts/.gitkeep
+!results/.gitkeep

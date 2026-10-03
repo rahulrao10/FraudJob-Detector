@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scam Job Checker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Scam Job Checker</h1>
+    <span id="server" class="server">checking server…</span>
+  </header>
+
+  <button id="scan" class="primary">Check this job posting</button>
+
+  <details>
+    <summary>Paste the text instead</summary>
+    <textarea id="manual" rows="5" placeholder="Paste the job description here"></textarea>
+  </details>
+
+  <section id="result" hidden>
+    <div class="verdict">
+      <p id="levelText" class="level"></p>
+      <p id="scoreText" class="score"></p>
+    </div>
+    <div class="meter" aria-hidden="true">
+      <span class="zone low"></span><span class="zone mid"></span><span class="zone high"></span>
+      <span id="marker" class="marker"></span>
+    </div>
+
+    <h2>Red flags found</h2>
+    <ul id="flags" class="flags"></ul>
+
+    <h2>Words that raised the score</h2>
+    <p id="terms" class="terms"></p>
+
+    <p class="note">This is a risk indicator, not a verdict. Verify the company on its official website before sharing any details or paying anything.</p>
+  </section>
+
+  <p id="error" class="error" hidden></p>
+  <script src="popup.js"></script>
+</body>
+</html>
